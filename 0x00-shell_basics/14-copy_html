@@ -1,2 +1,2 @@
 #!/bin/bash
-parent_dir="$(dirname "$(pwd)")" && rsync -a --ignore-existing --update --include='*.html' --exclude='*' ./ "$parent_dir"/
+cp -n ./*.html .. 2>/dev/null | grep -v "’./.html’" | awk '{print $2}' | xargs -r -n 1 basename
