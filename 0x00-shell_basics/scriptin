@@ -6,3 +6,6 @@ read fname
 
 echo "#!/bin/bash" >> $fname
 echo $command >> $fname 
+
+chmod u+x $fname
+
