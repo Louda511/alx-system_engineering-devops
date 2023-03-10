@@ -1,2 +1,4 @@
 #!/bin/bash
 { printf ".\n..,"; ls -1 | sort -d | sed -e 's/^[[:digit:][:alpha:]]/,&/' X
+#!/bin/bash
+ls -amp
