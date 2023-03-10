@@ -1,2 +1,2 @@
 #!/bin/bash
-(printf ".n..,"; ls -1 | sort -d | sed -e 's/^[[:digit:][:alpha:]]/,&/' -e 's/$///') | paste -sd,
+{ printf ".\n..,"; ls -1 | sort -d | sed -e 's/^[[:digit:][:alpha:]]/,&/' X
