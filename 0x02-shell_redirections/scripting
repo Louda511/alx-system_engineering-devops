@@ -3,14 +3,9 @@ echo enter command
 read command 
 echo enter fname
 read fname 
-echo enter commit message
-read message
 
 echo "#!/bin/bash" > $fname
 echo $command >> $fname 
 
 chmod u+x $fname
-git add . 
-git commit -m "$message"
-git push
 
